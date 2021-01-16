@@ -1,16 +1,55 @@
+import React, {Component} from "react";
+import {browserHistory} from "react-router";
+import {Formik} from "formik";
+import {AuthInput, AuthTextArea} from "../Constants";
+import {addNewBook} from '../functions/AddBook';
 
-export const Modal = ({handleClose, show, children}) => {
-    const showHideClassName = show ? "modal display-block" : "modal display-none";
+export default class AddBookScreen extends Component {
+    constructor() {
+        super();
+        this.state = {
 
-    return (
-        <div className={showHideClassName}>
-            <section>
-                {children}
-                <button type="button" onClick={handleClose}>
-                    Close
-                </button>
-            </section>
-        </div>
-    );
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <h1 style={{textAlign: 'center'}}>Add New Book</h1>
+                <Formik initialValues={{comment: ''}} onSubmit={(values) => {
+                    addNewBook(values);
+                    browserHistory.push('/home');
+                }}>
+                    {props => (
+                        <React.Fragment>
+                            <div style={{textAlign: 'center'}}>
+                                <AuthInput
+                                    props={props}
+                                    formikKey="title"
+                                    label="Book Title"
+                                    placeholder="Title"/>
+                                <AuthInput
+                                    props={props}
+                                    formikKey="author"
+                                    label="Book's Author"
+                                    placeholder="Author"/>
+                                <AuthTextArea
+                                    props={props}
+                                    formikKey="synopsis"
+                                    label="Synopsis"
+                                    placeholder="Describe the plot!"
+                                style={{height: '100px', overflowWrap: 'breakWord'}}/>
+                                <AuthInput
+                                    props={props}
+                                    formikKey="themes"
+                                    label="Themes"
+                                    placeholder="List the book's themes"/>
+                                <button onClick={props.handleSubmit}>Submit</button>
+                            </div>
+                        </React.Fragment>
+                    )}
+                </Formik>
+            </div>
+        );
+    }
 }
-export default Modal;

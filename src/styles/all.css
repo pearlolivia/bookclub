@@ -1,0 +1,21 @@
+.link {
+    color: black;
+}
+
+.link:hover {
+    color: #F6D8DB;
+}
+
+button {
+    background-color: white;
+    border: 1px solid #F6D8DB;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #F6D8DB;
+}
+
+h2, h4 {
+    color: #EA6AA7;
+}
