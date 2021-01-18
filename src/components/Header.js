@@ -26,6 +26,10 @@ export const Header = () => {
                             <Link to="/login" className="link"><MDBIcon icon="user" size="3x" />
                                 <h5>Login/Register</h5></Link>
                         </div>
+                        <div style={{width:"100px", paddingLeft:"30px", textAlign: "center"}}>
+                            <a href="https://join.skype.com/k8vs5q9SAeRJ" target="_blank" className="link"><MDBIcon icon="desktop" size="3x" />
+                                <h5>Join Meeting</h5></a>
+                        </div>
                     </div>
         </div>
     )
