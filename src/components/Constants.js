@@ -15,7 +15,21 @@ export const AuthInput = ({label, props, formikKey, ...rest}) => {
             formikKey={formikKey}
             props={props}>
             <input
-                style={{overflowWrap: 'break-word'}}
+                onChange={props.handleChange(formikKey)}
+                onBlur={props.handleBlur(formikKey)}
+                {...rest} />
+        </AuthWrapper>
+    )
+}
+
+export const AuthPasswordInput = ({label, props, formikKey, ...rest}) => {
+    return (
+        <AuthWrapper
+            label={label}
+            formikKey={formikKey}
+            props={props}>
+            <input
+                type="password"
                 onChange={props.handleChange(formikKey)}
                 onBlur={props.handleBlur(formikKey)}
                 {...rest} />

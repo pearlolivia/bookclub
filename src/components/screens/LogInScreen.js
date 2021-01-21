@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Link} from 'react-router-dom';
 import {Formik} from "formik";
-import {AuthInput} from "../Constants";
+import {AuthInput, AuthPasswordInput} from "../Constants";
 import {login} from "../functions/Account";
 
 export default class LogInScreen extends Component {
@@ -25,13 +25,11 @@ export default class LogInScreen extends Component {
                                     <AuthInput
                                         props={props}
                                         formikKey="email"
-                                        label="Email:"
-                                        placeholder="Email"/>
-                                    <AuthInput
+                                        placeholder="Email:"/>
+                                    <AuthPasswordInput
                                         props={props}
                                         formikKey="password"
-                                        label="Password:"
-                                        placeholder="Password"/>
+                                        placeholder="Password:"/>
                                     <div>
                                         <button onClick={props.handleSubmit}>LOGIN</button>
                                     </div>
@@ -39,7 +37,7 @@ export default class LogInScreen extends Component {
                             </React.Fragment>
                         )}
                     </Formik>
-                    <h4 style={{paddingTop:'15px'}}>Don't have an account? Sign up to access site</h4>
+                    <h4 style={{paddingTop:'15px'}}>Don't have an account? Sign up!</h4>
                     <Link to="/register">Register</Link>
                 </div>
             </div>

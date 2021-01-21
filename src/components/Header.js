@@ -13,7 +13,7 @@ const linkStyle = {
 
 export const Header = () => {
     return (
-        <div style={{paddingTop: '10px'}}>
+        <div style={{paddingTop: '10px', paddingBottom: '10px'}}>
                     <div style={{display:"flex", padding:"10px", paddingLeft: "10px", paddingTop:"20px"}}>
                         <Link to="" style={linkStyle}>
                             <img src={logo} style={{width: '100px', height: '100px', borderRadius:"48px"}}/>
@@ -31,6 +31,7 @@ export const Header = () => {
                                 <h5>Join Meeting</h5></a>
                         </div>
                     </div>
+            <hr />
         </div>
     )
 }

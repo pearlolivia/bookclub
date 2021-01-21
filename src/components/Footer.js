@@ -1,9 +1,8 @@
 import React from 'react';
-import Link from "react-router/lib/Link";
 import "mdbreact/dist/css/mdb.css";
 import Firebase from 'firebase';
 import logo from '../logo.svg';
-
+import '../styles/all.css';
 function logOut() {
     try {
         Firebase.auth().signOut();
@@ -19,10 +18,11 @@ export const Footer = () => {
         <div>
             <hr />
             <div style={{textAlign: "center"}}>
-                <p><Link to="/home" onClick={logOut}>Sign Out</Link></p>
-                <p>Created with React.js <img src={logo} style={{width: "40px", height: "40px"}}/>
+                <p><span onClick={logOut} style={{cursor: 'pointer'}} className="signOut">Sign Out</span>
                 <br/>
-                    {new Date().getFullYear()}</p>
+                Created with React.js <img src={logo} style={{width: "40px", height: "40px"}}/>
+                <br/>
+                {new Date().getFullYear()}</p>
             </div>
         </div>
     )

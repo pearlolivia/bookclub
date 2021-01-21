@@ -25,24 +25,22 @@ export default class AddBookScreen extends Component {
                                 <AuthInput
                                     props={props}
                                     formikKey="title"
-                                    label="Book Title"
-                                    placeholder="Title"/>
+                                    placeholder="Title:"/>
                                 <AuthInput
                                     props={props}
                                     formikKey="author"
-                                    label="Book's Author"
-                                    placeholder="Author"/>
+                                    placeholder="Author:"/>
                                 <AuthTextArea
                                     props={props}
                                     formikKey="synopsis"
                                     label="Synopsis"
-                                    placeholder="Describe the plot!"
+                                    placeholder="Summarise for us:"
                                 style={{height: '100px', overflowWrap: 'breakWord'}}/>
                                 <AuthInput
                                     props={props}
                                     formikKey="themes"
                                     label="Themes"
-                                    placeholder="List the book's themes"/>
+                                    placeholder="List the themes explored:"/>
                                 <button onClick={props.handleSubmit}>Submit</button>
                             </div>
                         </React.Fragment>

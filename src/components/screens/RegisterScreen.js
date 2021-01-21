@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Formik} from "formik";
-import {AuthInput} from "../Constants";
+import {AuthInput, AuthPasswordInput} from "../Constants";
 import {register} from "../functions/Account";
 
 export default class RegisterScreen extends Component {
@@ -22,23 +22,19 @@ export default class RegisterScreen extends Component {
                                     <AuthInput
                                         props={props}
                                         formikKey="email"
-                                        label="Email:"
-                                        placeholder="Email"/>
+                                        placeholder="Email:"/>
                                     <AuthInput
                                         props={props}
                                         formikKey="username"
-                                        label="Username:"
-                                        placeholder="Username"/>
-                                    <AuthInput
+                                        placeholder="Username:"/>
+                                    <AuthPasswordInput
                                         props={props}
                                         formikKey="password"
-                                        label="Password:"
-                                        placeholder="Password"/>
-                                    <AuthInput
-                                        label="Confirm Password:"
+                                        placeholder="Password:"/>
+                                    <AuthPasswordInput
                                         props={props}
                                         formikKey="confirmPassword"
-                                        placeholder="Please confirm password"
+                                        placeholder="Please confirm password:"
                                     />
                                     <div>
                                         <button onClick={props.handleSubmit}>REGISTER</button>

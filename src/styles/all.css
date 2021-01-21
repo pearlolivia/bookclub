@@ -19,3 +19,11 @@ button:hover {
 h2, h4 {
     color: #EA6AA7;
 }
+
+.signOut {
+    color: #40BBF6;
+}
+
+.signOut:hover {
+    color: #F6D8DB;
+}

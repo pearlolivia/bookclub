@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Switch} from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import HomeScreen from "./components/screens/HomeScreen";
 import AddBookScreen from "./components/screens/AddBookScreen";
 import RegisterScreen from "./components/screens/RegisterScreen";
