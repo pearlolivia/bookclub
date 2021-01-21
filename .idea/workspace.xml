@@ -3,58 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b4bf5ecb-1798-4ac1-9e0e-849ab4585bb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/key.pub" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/screens/AddBookScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/screens/AddBookScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/screens/LogInScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/screens/LogInScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/screens/RegisterScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/screens/RegisterScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/2.a6636073.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/2.a6636073.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.de916a20.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.de916a20.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/2.1a489dac.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/2.1a489dac.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/2.1a489dac.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/3.6663d09d.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/3.6663d09d.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.65e28bfc.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.65e28bfc.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/runtime-main.a5b5f4ca.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/runtime-main.a5b5f4ca.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/arrow_left.2b063d13.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/arrow_right.0897f985.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/bookClubLogo.03f879f4.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/bookClubLogo.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-brands-400.0fea2496.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-brands-400.c967a94c.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-brands-400.dc2cbadd.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-brands-400.e33e2cf6.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-brands-400.ec82f282.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-regular-400.06b9d19c.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-regular-400.08f9891a.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-regular-400.1008b522.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-regular-400.1069ea55.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-regular-400.1495f578.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-solid-900.10ecefc2.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-solid-900.371dbce0.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-solid-900.3a24a60e.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-solid-900.3ceb50e7.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/fa-solid-900.46fdbd2d.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/media/logo.6ce24c58.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,13 +48,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components/functions" />
       <recent name="$PROJECT_DIR$/src/images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
