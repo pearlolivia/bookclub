@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import {browserHistory} from "react-router";
 import {Formik} from "formik";
 import {AuthInput, AuthTextArea} from "../Constants";
 import {addNewBook} from '../functions/AddBook';
@@ -18,7 +17,7 @@ export default class AddBookScreen extends Component {
                 <h1 style={{textAlign: 'center'}}>Add New Book</h1>
                 <Formik initialValues={{comment: ''}} onSubmit={(values) => {
                     addNewBook(values);
-                    browserHistory.push('/home');
+                    this.props.history.push('/');
                 }}>
                     {props => (
                         <React.Fragment>

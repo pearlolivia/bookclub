@@ -8,6 +8,7 @@ export function addNewBook(values) {
         author: values.author,
         synopsis: values.synopsis,
         themes: values.themes,
-        title: values.title
+        title: values.title,
+        comments: 0
     })
 }

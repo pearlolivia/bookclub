@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import {Formik} from "formik";
 import {AuthInput} from "../Constants";
 import {register} from "../functions/Account";
-import {browserHistory} from "react-router";
 
 export default class RegisterScreen extends Component {
     render() {
@@ -15,8 +14,7 @@ export default class RegisterScreen extends Component {
                         setTimeout(() => {
                             actions.setSubmitting(false);
                         }, 1000);
-                        browserHistory.push('/login');
-                        console.log(values);
+                        this.props.history.push('/login');
                     }} >
                         {props => (
                             <React.Fragment>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router';
+import {Link} from 'react-router-dom';
 import logo from '../images/bookClubLogo.JPG';
 import {MDBIcon} from "mdbreact";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -15,7 +15,7 @@ export const Header = () => {
     return (
         <div style={{paddingTop: '10px'}}>
                     <div style={{display:"flex", padding:"10px", paddingLeft: "10px", paddingTop:"20px"}}>
-                        <Link to="/home" style={linkStyle}>
+                        <Link to="" style={linkStyle}>
                             <img src={logo} style={{width: '100px', height: '100px', borderRadius:"48px"}}/>
                         </Link>
                         <div style={{paddingRight:"20px", marginLeft:"20px", width:"100px", textAlign: "center"}}>
