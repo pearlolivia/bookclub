@@ -20,7 +20,7 @@ export const Header = () => {
                         </Link>
                         <div style={{paddingRight:"20px", marginLeft:"20px", width:"100px", textAlign: "center"}}>
                             <Link to="/add" className="link"><MDBIcon icon="plus" size="3x"/>
-                                <h5>Add New Book</h5></Link>
+                                <h5>Add New Review</h5></Link>
                         </div>
                         <div style={{width:"100px", textAlign: "center"}}>
                             <Link to="/login" className="link"><MDBIcon icon="user" size="3x" />

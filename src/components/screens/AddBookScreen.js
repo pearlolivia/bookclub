@@ -14,7 +14,7 @@ export default class AddBookScreen extends Component {
     render() {
         return (
             <div>
-                <h1 style={{textAlign: 'center'}}>Add New Book</h1>
+                <h1 style={{textAlign: 'center'}}>Add New Book Review</h1>
                 <Formik initialValues={{comment: ''}} onSubmit={(values) => {
                     addNewBook(values);
                     this.props.history.push('/');
@@ -24,10 +24,12 @@ export default class AddBookScreen extends Component {
                             <div style={{textAlign: 'center'}}>
                                 <AuthInput
                                     props={props}
+                                    label="Title"
                                     formikKey="title"
                                     placeholder="Title:"/>
                                 <AuthInput
                                     props={props}
+                                    label="Author"
                                     formikKey="author"
                                     placeholder="Author:"/>
                                 <AuthTextArea

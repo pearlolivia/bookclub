@@ -2,6 +2,11 @@ import Firebase from 'firebase';
 
 export async function login(values) {
     Firebase.auth().signInWithEmailAndPassword(values.email, values.password)
+        .then((userCredential) => {
+            const user = userCredential.user;
+            alert('Thanks for logging in ' + user.displayName + '!');
+            console.log('User logged in successfully.');
+        })
         .catch(function(error) {
             //handle errors here
             const errorCode = error.code;
@@ -13,8 +18,6 @@ export async function login(values) {
             }
             console.log(error);
         });
-    console.log('User logged in successfully.');
-    window.alert('Thanks for logging in! Click the logo in the header to return to the home page.');
 }
 
 export function register(values) {
@@ -34,5 +37,7 @@ export function register(values) {
                         }
                     }),
                 );
-        })
+        }).then((userCredential) => {
+        window.alert('Thanks for registering :)')
+    })
 }
