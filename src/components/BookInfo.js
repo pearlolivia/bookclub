@@ -1,17 +1,17 @@
 import React from "react";
 
-export const Book = ({book}) => {
+export const Film = ({film}) => {
     return (
         <div style={{paddingRight: "10px", maxWidth: "35%"}}>
-            <h3><b>{book.title}</b>
+            <h3><b>{film.title}</b>
                 <br />
-                <span style={{fontSize:"20px"}}>By <i>{book.author}</i></span></h3>
+                <span style={{fontSize:"20px"}}><i>{film.year}</i></span></h3>
             <hr/>
             <h4>Synopsis</h4>
-            <p>{book.synopsis}</p>
+            <p>{film.synopsis}</p>
             <br/>
-            <h4>Themes</h4>
-            <p>{book.themes}</p>
+            <h4>Starring</h4>
+            <p>{film.starring}</p>
         </div>
     )
 }

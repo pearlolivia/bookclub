@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter, Route, Switch } from "react-router-dom";
 import HomeScreen from "./components/screens/HomeScreen";
-import AddBookScreen from "./components/screens/AddBookScreen";
+import AddFilmScreen from "./components/screens/AddFilmScreen";
 import RegisterScreen from "./components/screens/RegisterScreen";
 import LogInScreen from "./components/screens/LogInScreen";
 import {Header} from "./components/Header";
@@ -16,7 +16,7 @@ function App() {
                 <Header />
                 <Switch>
                     <Route exact path={"/"} component={HomeScreen} />
-                    <Route path={"/add"} component={AddBookScreen} />
+                    <Route path={"/add"} component={AddFilmScreen} />
                     <Route path={"/register"} component={RegisterScreen}/>
                     <Route path={"/login"} component={LogInScreen}/>
                 </Switch>

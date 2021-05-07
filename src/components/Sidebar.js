@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Sidebar = ({reading, bookTitle, bookAuthor, functionTitle, functionAuthor}) => {
+export const Sidebar = ({reading, filmTitle, filmYear, functionTitle, functionAuthor}) => {
     return (
         <div>
             <h2>{reading}</h2>
@@ -9,14 +9,13 @@ export const Sidebar = ({reading, bookTitle, bookAuthor, functionTitle, function
                 name='currentTitle'
                 style={{border: 'none', fontWeight: 'bold'}}
                 onChange={functionTitle}
-                defaultValue={bookTitle}
+                defaultValue={filmTitle}
             /></h5>
-            <h5>By <br/>
-                <input
+            <h5><input
                     type='text'
                     name='currentAuthor'
                     style={{border: 'none', fontStyle: 'italic'}}
-                    defaultValue={bookAuthor}
+                    defaultValue={filmYear}
                     onChange={functionAuthor}
                 /></h5>
             <hr/>

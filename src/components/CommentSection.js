@@ -2,11 +2,11 @@ import {MDBIcon} from "mdbreact";
 import React from "react";
 import Firebase from "firebase";
 
-function deleteComment(bookId, commentId) {
-    Firebase.database().ref('/books/' + bookId + '/comments/' + commentId).remove();
+function deleteComment(filmId, commentId) {
+    Firebase.database().ref('/books/' + filmId + '/comments/' + commentId).remove();
 }
 
-export const CommentSection = ({comments, signedInUser, bookId}) => {
+export const CommentSection = ({comments, signedInUser, filmId}) => {
     return (
         <div>
             {comments.map(comment => {
@@ -23,7 +23,7 @@ export const CommentSection = ({comments, signedInUser, bookId}) => {
                             <span
                                 style={{float: "right"}}><b><i>- {comment.username}</i></b></span>
                         </p>
-                        <div style={{cursor: "point", display: display}} onClick={deleteComment.bind(null, bookId, comment.id)}>
+                        <div style={{cursor: "point", display: display}} onClick={deleteComment.bind(null, filmId, comment.id)}>
                             <MDBIcon icon="minus" size="1x" />
                         </div>
                         <hr/>

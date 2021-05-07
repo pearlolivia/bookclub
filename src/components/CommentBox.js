@@ -3,12 +3,12 @@ import React from "react";
 import {AuthTextArea} from "./Constants";
 import {Formik} from "formik";
 
-export const CommentBox = ({bookId, userId}) => {
+export const CommentBox = ({filmId, userId}) => {
     return (
         <Formik initialValues={{comment: ''}} onSubmit={(values) => {
             if(userId) {
-                addComment(values, userId, bookId, new Date().toDateString());
-                console.log(bookId);
+                addComment(values, userId, filmId, new Date().toDateString());
+                console.log(filmId);
             } else {
                 window.alert('Please log in to comment!')
             }
