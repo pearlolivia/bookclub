@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import {Formik} from "formik";
 import {AuthInput, AuthTextArea} from "../Constants";
-import {addNewBook} from '../functions/AddBook';
+import {addNewFilm} from '../functions/AddFilm';
 
-export default class AddBookScreen extends Component {
+export default class AddFilmScreen extends Component {
     constructor() {
         super();
         this.state = {
@@ -14,9 +14,9 @@ export default class AddBookScreen extends Component {
     render() {
         return (
             <div>
-                <h1 style={{textAlign: 'center'}}>Add New Book</h1>
+                <h1 style={{textAlign: 'center'}}>Add New Film Review</h1>
                 <Formik initialValues={{comment: ''}} onSubmit={(values) => {
-                    addNewBook(values);
+                    addNewFilm(values);
                     this.props.history.push('/');
                 }}>
                     {props => (
@@ -24,12 +24,14 @@ export default class AddBookScreen extends Component {
                             <div style={{textAlign: 'center'}}>
                                 <AuthInput
                                     props={props}
+                                    label="Title"
                                     formikKey="title"
                                     placeholder="Title:"/>
                                 <AuthInput
                                     props={props}
-                                    formikKey="author"
-                                    placeholder="Author:"/>
+                                    label="Year"
+                                    formikKey="year"
+                                    placeholder="Year:"/>
                                 <AuthTextArea
                                     props={props}
                                     formikKey="synopsis"
@@ -38,9 +40,9 @@ export default class AddBookScreen extends Component {
                                 style={{height: '100px', overflowWrap: 'breakWord'}}/>
                                 <AuthInput
                                     props={props}
-                                    formikKey="themes"
-                                    label="Themes"
-                                    placeholder="List the themes explored:"/>
+                                    formikKey="starring"
+                                    label="Starring"
+                                    placeholder="List the actors:"/>
                                 <button onClick={props.handleSubmit}>Submit</button>
                             </div>
                         </React.Fragment>

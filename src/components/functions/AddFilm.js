@@ -2,12 +2,12 @@ import Firebase from 'firebase';
 
 const key = Firebase.database().ref('/books').push().key;
 
-export function addNewBook(values) {
-    Firebase.database().ref('/books/' + key).set({
+export function addNewFilm(values) {
+    Firebase.database().ref('/films/' + key).set({
         id: key,
-        author: values.author,
+        year: values.year,
         synopsis: values.synopsis,
-        themes: values.themes,
+        starring: values.starring,
         title: values.title,
         comments: 0
     })

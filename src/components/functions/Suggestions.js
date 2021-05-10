@@ -5,7 +5,7 @@ export function addSuggestion(values) {
 
     Firebase.database().ref('/suggestions/' + key).set({
         id: key,
-        author: values.author,
+        year: values.year,
         title: values.title
     })
 }
