@@ -4,6 +4,8 @@
     <list default="true" id="b4bf5ecb-1798-4ac1-9e0e-849ab4585bb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CommentSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommentSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/functions/AddComment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/functions/AddComment.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +51,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components/functions" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -133,17 +135,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
@@ -152,31 +143,31 @@
       <screen x="1440" y="23" width="1600" height="877" />
     </state>
     <state x="1440" y="297" key="FileDocumentManager.FileCacheConflict/0.23.1440.821/1440.23.1600.877@1440.23.1600.877" timestamp="1620404285328" />
-    <state width="981" height="220" key="GridCell.Tab.0.bottom" timestamp="1620661094575">
+    <state width="981" height="222" key="GridCell.Tab.0.bottom" timestamp="1620404408511">
       <screen x="1440" y="23" width="1600" height="877" />
     </state>
-    <state width="981" height="220" key="GridCell.Tab.0.bottom/0.23.1440.817/1440.23.1600.877@1440.23.1600.877" timestamp="1620661094575" />
+    <state width="981" height="163" key="GridCell.Tab.0.bottom/0.23.1440.817/1440.23.1600.877@1440.23.1600.877" timestamp="1615135120301" />
     <state width="981" height="222" key="GridCell.Tab.0.bottom/0.23.1440.821/1440.23.1600.877@1440.23.1600.877" timestamp="1620404408511" />
     <state width="1114" height="243" key="GridCell.Tab.0.bottom/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1612880695883" />
     <state width="981" height="257" key="GridCell.Tab.0.bottom/0.23.1440.823/1440.23.1600.877@1440.23.1600.877" timestamp="1620387122977" />
-    <state width="981" height="220" key="GridCell.Tab.0.center" timestamp="1620661094573">
+    <state width="981" height="222" key="GridCell.Tab.0.center" timestamp="1620404408510">
       <screen x="1440" y="23" width="1600" height="877" />
     </state>
-    <state width="981" height="220" key="GridCell.Tab.0.center/0.23.1440.817/1440.23.1600.877@1440.23.1600.877" timestamp="1620661094573" />
+    <state width="981" height="163" key="GridCell.Tab.0.center/0.23.1440.817/1440.23.1600.877@1440.23.1600.877" timestamp="1615135120300" />
     <state width="981" height="222" key="GridCell.Tab.0.center/0.23.1440.821/1440.23.1600.877@1440.23.1600.877" timestamp="1620404408510" />
     <state width="1114" height="243" key="GridCell.Tab.0.center/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1612880695881" />
     <state width="981" height="257" key="GridCell.Tab.0.center/0.23.1440.823/1440.23.1600.877@1440.23.1600.877" timestamp="1620387122975" />
-    <state width="981" height="220" key="GridCell.Tab.0.left" timestamp="1620661094572">
+    <state width="981" height="222" key="GridCell.Tab.0.left" timestamp="1620404408509">
       <screen x="1440" y="23" width="1600" height="877" />
     </state>
-    <state width="981" height="220" key="GridCell.Tab.0.left/0.23.1440.817/1440.23.1600.877@1440.23.1600.877" timestamp="1620661094572" />
+    <state width="981" height="163" key="GridCell.Tab.0.left/0.23.1440.817/1440.23.1600.877@1440.23.1600.877" timestamp="1615135120299" />
     <state width="981" height="222" key="GridCell.Tab.0.left/0.23.1440.821/1440.23.1600.877@1440.23.1600.877" timestamp="1620404408509" />
     <state width="1114" height="243" key="GridCell.Tab.0.left/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1612880695880" />
     <state width="981" height="257" key="GridCell.Tab.0.left/0.23.1440.823/1440.23.1600.877@1440.23.1600.877" timestamp="1620387122973" />
-    <state width="981" height="220" key="GridCell.Tab.0.right" timestamp="1620661094574">
+    <state width="981" height="222" key="GridCell.Tab.0.right" timestamp="1620404408510">
       <screen x="1440" y="23" width="1600" height="877" />
     </state>
-    <state width="981" height="220" key="GridCell.Tab.0.right/0.23.1440.817/1440.23.1600.877@1440.23.1600.877" timestamp="1620661094574" />
+    <state width="981" height="163" key="GridCell.Tab.0.right/0.23.1440.817/1440.23.1600.877@1440.23.1600.877" timestamp="1615135120301" />
     <state width="981" height="222" key="GridCell.Tab.0.right/0.23.1440.821/1440.23.1600.877@1440.23.1600.877" timestamp="1620404408510" />
     <state width="1114" height="243" key="GridCell.Tab.0.right/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1612880695882" />
     <state width="981" height="257" key="GridCell.Tab.0.right/0.23.1440.823/1440.23.1600.877@1440.23.1600.877" timestamp="1620387122976" />
